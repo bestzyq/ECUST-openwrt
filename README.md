@@ -10,7 +10,7 @@ wget -O install.sh https://gitee.com/chinazyq/ECUST-openwrt/raw/master/install.s
 ```
 2.仅校内地址走校园网，其它走宽带
 ```
-wget -O install.sh https://gitee.com/chinazyq/ECUST-openwrt/raw/master/install.sh && chmod +x install.sh && ./install.sh
+wget -O install.sh https://gitee.com/chinazyq/ECUST-openwrt/raw/master/install_onlyschool.sh && chmod +x install.sh && ./install.sh
 ```
 ## 说明
 IP文件夹中的IP段具有时效性，不保证也不可能长期有效  
