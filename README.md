@@ -3,6 +3,9 @@
 [![Gitee stars](https://gitee.com/chinazyq/ECUST-openwrt/badge/star.svg?theme=dark)](https://gitee.com/chinazyq/ECUST-openwrt)  
 用openwrt mwan3实现ECUST校园网、宽带按IP段分流（V6流量全走校园网，V4流量分两种）
 
+# 前置准备
+见[wiki](https://gitee.com/chinazyq/ECUST-openwrt/wikis/%E5%89%8D%E7%BD%AE%E5%87%86%E5%A4%87)
+
 # 一键安装
 1.教育网cernet、校内地址走校园网，其它走宽带
 ```
