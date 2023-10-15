@@ -7,7 +7,40 @@
 见[wiki](https://gitee.com/chinazyq/ECUST-openwrt/wikis/%E5%89%8D%E7%BD%AE%E5%87%86%E5%A4%87)
 
 # 分步安装
-
+1.教育网cernet、校内地址走校园网，其它走宽带
+```
+# 更新软件包列表
+opkg update
+```
+```
+# 安装luci-app-mwan3
+opkg install luci-app-mwan3
+```
+```
+# 下载配置文件
+wget -O /etc/config/mwan3 https://gitee.com/chinazyq/ECUST-openwrt/raw/master/mwan3
+```
+```
+# 重新启动mwan3服务
+/etc/init.d/mwan3 restart
+```
+2.仅校内地址走校园网，其它走宽带
+```
+# 更新软件包列表
+opkg update
+```
+```
+# 安装luci-app-mwan3
+opkg install luci-app-mwan3
+```
+```
+# 下载配置文件
+wget -O /etc/config/mwan3 https://gitee.com/chinazyq/ECUST-openwrt/raw/master/mwan3_onlyschool
+```
+```
+# 重新启动mwan3服务
+/etc/init.d/mwan3 restart
+```
 
 # 一键安装（新版本似乎已失效，还是手动分步安装吧）
 1.教育网cernet、校内地址走校园网，其它走宽带
@@ -28,6 +61,7 @@ export url='https://gitee.com/chinazyq/ECUST-openwrt/raw/master' && sh -c "$(cur
 #使用wget安装
 export url='https://gitee.com/chinazyq/ECUST-openwrt/raw/master' && wget -q --no-check-certificate -O /tmp/install_onlyschool.sh $url/install_onlyschool.sh  && sh /tmp/install_onlyschool.sh && source /etc/profile &> /dev/null
 ```
+
 ## 说明
 IP文件夹中的IP段具有时效性，不保证也不可能长期有效  
 第一种情况，部分CDN解析出的教育网地址也会走校园网而遭到限速，可以通过避免使用ipv6解析服务器或者使用学校解析服务器解决（一般不需要进行任何操作）  
