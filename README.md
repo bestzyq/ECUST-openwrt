@@ -6,7 +6,10 @@
 # 前置准备
 见[wiki](https://gitee.com/chinazyq/ECUST-openwrt/wikis/%E5%89%8D%E7%BD%AE%E5%87%86%E5%A4%87)
 
-# 一键安装
+# 分步安装
+
+
+# 一键安装（新版本似乎已失效，还是手动分步安装吧）
 1.教育网cernet、校内地址走校园网，其它走宽带
 ```
 #使用curl安装
