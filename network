@@ -1,0 +1,731 @@
+config route
+	option interface 'wan'
+	option target '10.0.0.0/8'
+
+config route
+	option interface 'wan'
+	option target '172.16.0.0/12'
+
+config route
+	option interface 'wan'
+	option target '180.169.49.128/25'
+
+config route
+	option interface 'wan'
+	option target '116.247.126.120/29'
+
+config route
+	option interface 'wan'
+	option target '116.236.209.128/26'
+
+config route
+	option interface 'wan'
+	option target '116.236.209.192/26'
+
+config route
+	option interface 'wan'
+	option target '116.228.3.0/28'
+
+config route
+	option interface 'wan'
+	option target '116.228.241.0/24'
+
+config route
+	option interface 'wan'
+	option target '101.230.76.128/25'
+
+config route
+	option interface 'wan'
+	option target '210.51.42.0/24'
+
+config route
+	option interface 'wan'
+	option target '1.51.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '1.184.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '42.244.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '43.252.48.0/22'
+
+config route
+	option interface 'wan'
+	option target '49.52.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '49.120.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '49.140.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '49.208.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '58.154.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '58.192.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '58.194.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '58.196.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '58.198.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '58.200.0.0/13'
+
+config route
+	option interface 'wan'
+	option target '59.64.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '59.68.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '59.72.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '59.74.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '59.76.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '59.77.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '59.78.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '101.4.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '101.76.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '103.81.200.0/22'
+
+config route
+	option interface 'wan'
+	option target '103.87.20.0/22'
+
+config route
+	option interface 'wan'
+	option target '103.115.120.0/22'
+
+config route
+	option interface 'wan'
+	option target '103.137.60.0/24'
+
+config route
+	option interface 'wan'
+	option target '103.165.110.0/23'
+
+config route
+	option interface 'wan'
+	option target '103.205.162.0/24'
+
+config route
+	option interface 'wan'
+	option target '103.226.80.0/22'
+
+config route
+	option interface 'wan'
+	option target '110.64.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '111.114.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '111.116.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '111.186.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '113.54.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '114.212.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '114.214.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '115.24.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '115.154.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '115.156.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '115.158.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '116.13.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '116.56.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '118.202.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '118.228.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '118.230.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '120.94.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '120.95.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '121.48.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '121.52.160.0/19'
+
+config route
+	option interface 'wan'
+	option target '121.192.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '121.193.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '121.194.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '121.248.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '122.204.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '125.216.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '125.218.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '125.219.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '125.220.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '125.222.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '175.185.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '175.186.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '180.84.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '180.201.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '180.208.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '183.168.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '183.170.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '183.172.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '192.124.154.0/24'
+
+config route
+	option interface 'wan'
+	option target '202.4.128.0/19'
+
+config route
+	option interface 'wan'
+	option target '202.38.2.0/23'
+
+config route
+	option interface 'wan'
+	option target '202.38.64.0/19'
+
+config route
+	option interface 'wan'
+	option target '202.38.96.0/19'
+
+config route
+	option interface 'wan'
+	option target '202.38.140.0/23'
+
+config route
+	option interface 'wan'
+	option target '202.38.146.0/23'
+
+config route
+	option interface 'wan'
+	option target '202.38.184.0/21'
+
+config route
+	option interface 'wan'
+	option target '202.38.192.0/18'
+
+config route
+	option interface 'wan'
+	option target '202.112.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '202.113.0.0/20'
+
+config route
+	option interface 'wan'
+	option target '202.113.16.0/20'
+
+config route
+	option interface 'wan'
+	option target '202.113.32.0/19'
+
+config route
+	option interface 'wan'
+	option target '202.113.64.0/18'
+
+config route
+	option interface 'wan'
+	option target '202.113.128.0/18'
+
+config route
+	option interface 'wan'
+	option target '202.113.192.0/19'
+
+config route
+	option interface 'wan'
+	option target '202.113.224.0/20'
+
+config route
+	option interface 'wan'
+	option target '202.113.240.0/20'
+
+config route
+	option interface 'wan'
+	option target '202.114.0.0/19'
+
+config route
+	option interface 'wan'
+	option target '202.114.32.0/19'
+
+config route
+	option interface 'wan'
+	option target '202.114.64.0/18'
+
+config route
+	option interface 'wan'
+	option target '202.114.128.0/17'
+
+config route
+	option interface 'wan'
+	option target '202.115.0.0/19'
+
+config route
+	option interface 'wan'
+	option target '202.115.128.0/17'
+
+config route
+	option interface 'wan'
+	option target '202.116.0.0/19'
+
+config route
+	option interface 'wan'
+	option target '202.116.32.0/20'
+
+config route
+	option interface 'wan'
+	option target '202.116.48.0/20'
+
+config route
+	option interface 'wan'
+	option target '202.116.64.0/19'
+
+config route
+	option interface 'wan'
+	option target '202.116.96.0/19'
+
+config route
+	option interface 'wan'
+	option target '202.116.128.0/17'
+
+config route
+	option interface 'wan'
+	option target '202.117.0.0/18'
+
+config route
+	option interface 'wan'
+	option target '202.117.64.0/18'
+
+config route
+	option interface 'wan'
+	option target '202.117.128.0/17'
+
+config route
+	option interface 'wan'
+	option target '202.118.0.0/19'
+
+config route
+	option interface 'wan'
+	option target '202.118.32.0/19'
+
+config route
+	option interface 'wan'
+	option target '202.118.64.0/18'
+
+config route
+	option interface 'wan'
+	option target '202.118.128.0/17'
+
+config route
+	option interface 'wan'
+	option target '202.119.0.0/19'
+
+config route
+	option interface 'wan'
+	option target '202.119.32.0/19'
+
+config route
+	option interface 'wan'
+	option target '202.119.64.0/20'
+
+config route
+	option interface 'wan'
+	option target '202.119.80.0/20'
+
+config route
+	option interface 'wan'
+	option target '202.119.96.0/19'
+
+config route
+	option interface 'wan'
+	option target '202.119.128.0/17'
+
+config route
+	option interface 'wan'
+	option target '202.120.0.0/18'
+
+config route
+	option interface 'wan'
+	option target '202.120.64.0/18'
+
+config route
+	option interface 'wan'
+	option target '202.120.128.0/17'
+
+config route
+	option interface 'wan'
+	option target '202.121.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '202.127.216.0/21'
+
+config route
+	option interface 'wan'
+	option target '202.127.224.0/19'
+
+config route
+	option interface 'wan'
+	option target '202.179.240.0/20'
+
+config route
+	option interface 'wan'
+	option target '202.192.0.0/13'
+
+config route
+	option interface 'wan'
+	option target '202.200.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '202.204.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '203.91.120.0/21'
+
+config route
+	option interface 'wan'
+	option target '210.25.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '210.26.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '210.28.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '210.32.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '210.36.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '210.40.0.0/13'
+
+config route
+	option interface 'wan'
+	option target '211.64.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '211.68.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '211.70.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '211.80.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '211.81.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '211.82.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '211.83.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '211.84.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '211.86.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '218.192.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '218.193.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '218.194.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '218.195.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '218.196.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '219.216.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '219.218.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '219.220.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '219.221.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '219.222.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '219.224.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '219.226.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '219.227.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '219.228.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '219.230.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '219.242.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '219.244.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '222.16.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '222.18.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '222.20.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '222.22.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '222.23.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '222.24.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '222.26.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '222.28.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '222.192.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '222.196.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '222.198.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '222.199.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '222.200.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '222.204.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '222.206.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '223.2.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '223.128.0.0/15'
+
+config route
+	option interface 'wan'
+	option target '8.222.128.0/17'
+
+config route
+	option interface 'wan'
+	option target '209.222.114.0/23'
