@@ -1,3 +1,4 @@
+# ECUST IP
 config route
 	option interface 'wan'
 	option target '10.0.0.0/8'
@@ -38,6 +39,7 @@ config route
 	option interface 'wan'
 	option target '210.51.42.0/24'
 
+# CERNET IP
 config route
 	option interface 'wan'
 	option target '1.51.0.0/16'
@@ -49,14 +51,6 @@ config route
 config route
 	option interface 'wan'
 	option target '42.244.0.0/14'
-
-config route
-	option interface 'wan'
-	option target '43.136.0.0/14'
-    
-config route
-	option interface 'wan'
-	option target '43.140.0.0/14'
 
 config route
 	option interface 'wan'
@@ -179,10 +173,6 @@ config route
 	option target '111.116.0.0/15'
 
 config route
-	option interface 'cmcc'
-	option target '111.186.58.123'
-
-config route
 	option interface 'wan'
 	option target '111.186.0.0/15'
 
@@ -289,10 +279,6 @@ config route
 config route
 	option interface 'wan'
 	option target '125.222.0.0/15'
-
-config route
-	option interface 'wan'
-	option target '175.27.0.0/16'
 
 config route
 	option interface 'wan'
@@ -738,10 +724,34 @@ config route
 	option interface 'wan'
 	option target '223.128.0.0/15'
 
+# mc.hypixel.net
 config route
 	option interface 'wan'
 	option target '209.222.114.0/23'
 
+# Github
 config route
 	option interface 'wan'
 	option target '185.199.108.0/22'
+
+# mc.sjtu.cn
+config route
+	option interface 'cmcc'
+	option target '111.186.58.123'
+    
+# Tencent Cernet ip
+config route
+	option interface 'wan'
+	option target '43.136.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '43.140.0.0/14'
+
+config route
+	option interface 'wan'
+	option target '109.244.0.0/16'
+
+config route
+	option interface 'wan'
+	option target '175.27.0.0/16'
