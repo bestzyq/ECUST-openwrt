@@ -52,6 +52,10 @@ config route
 
 config route
 	option interface 'wan'
+	option target '43.140.0.0/14'
+
+config route
+	option interface 'wan'
 	option target '43.252.48.0/22'
 
 config route
