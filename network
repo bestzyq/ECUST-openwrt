@@ -745,8 +745,3 @@ config route
 config route
 	option interface 'wan'
 	option target '185.199.108.0/22'
-
-config route
-	option interface 'wan'
-	option target '20.205.243.166/22'
-
