@@ -734,7 +734,15 @@ config route
 	option interface 'wan'
 	option target '185.199.108.0/22'
 
-# mc.sjtu.cn
+config route
+	option interface 'wan'
+	option target '20.0.0.0/11'
+
+config route
+	option interface 'wan'
+	option target '20.192.0.0/10'
+
+# SJTUMC
 config route
 	option interface 'cmcc'
 	option target '111.186.58.123'
