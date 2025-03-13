@@ -776,3 +776,8 @@ config route
 config route
 	option interface 'wan'
 	option target '172.67.0.0/16'
+
+# Elsevier
+config route
+	option interface 'wan'
+	option target '203.22.241.0/24'
