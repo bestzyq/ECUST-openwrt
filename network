@@ -741,11 +741,6 @@ config route
 config route
 	option interface 'wan'
 	option target '20.192.0.0/10'
-
-# SJTUMC
-config route
-	option interface 'cmcc'
-	option target '111.186.58.123'
     
 # Tencent Cernet ip
 config route
@@ -764,20 +759,17 @@ config route
 	option interface 'wan'
 	option target '175.27.0.0/16'
 
-# Cloudflare
-config route
-	option interface 'wan'
-	option target '104.16.0.0/12'
-
-config route
-	option interface 'wan'
-	option target '172.64.0.0/16'
-
-config route
-	option interface 'wan'
-	option target '172.67.0.0/16'
-
 # Elsevier
 config route
 	option interface 'wan'
 	option target '203.22.241.0/24'
+
+# Unicomdns
+config route
+	option interface 'wan'
+	option target '112.65.184.227'
+
+# SciFinder
+config route
+	option interface 'wan'
+	option target '162.247.5.0/24'
