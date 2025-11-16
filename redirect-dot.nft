@@ -1,15 +1,12 @@
-table inet dot_redirect {
-    chain prerouting {
-        type nat hook prerouting priority dstnat;
+chain redirect_dot {
+    type nat hook prerouting priority dstnat;
 
-        # IPv4
-        iifname "br-lan" tcp dport 853 redirect to 854
-        iifname "pppoe-wan" tcp dport 853 redirect to 854
-        # ip saddr 10.0.0.0/8 tcp dport 853 redirect to 854
-        # ip saddr 172.16.0.0/12 tcp dport 853 redirect to 854
+    # LAN / Wi-Fi
+    iifname "br-lan" tcp dport 853 redirect to 854
 
-        # # IPv6
-        # ip6 saddr 2001:da8:8007::/48 tcp dport 853 redirect to 854
-    }
+    # WAN (外部访问路由器自身)
+    iifname "pppoe-wan" tcp dport 853 redirect to 855
+
+    # WAN (外部访问路由器自身) - DNS over UDP
+    iifname "pppoe-wan" udp dport 53 redirect to 54
 }
-
