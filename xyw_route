@@ -1,0 +1,50 @@
+#!/bin/sh /etc/rc.common
+
+START=95
+TABLE_ID="100"
+IP_FILE="/root/network/xyw_ip.txt"
+
+start() {
+    [ -f "$IP_FILE" ] || return 1
+
+    # 最多等待 30 秒，直到 pppoe-wan 接口出现
+    local timeout=0
+    while ! ifconfig pppoe-wan >/dev/null 2>&1; do
+        sleep 1
+        timeout=$((timeout + 1))
+        [ $timeout -ge 60 ] && { echo "pppoe-wan timeout, skip."; return 1; }
+    done
+
+    # 1. 准备路由表出口
+    ip route flush table "$TABLE_ID"
+    ip route add default dev pppoe-wan table "$TABLE_ID"
+
+    # 2. 批量添加 ip rule (直接匹配目的地 IP)
+    echo "Batch adding IP rules... this may take a few seconds."
+    
+    # 预先清理旧规则，防止重复运行导致条目堆积
+    while ip rule del table "$TABLE_ID" 2>/dev/null; do :; done
+
+    # 核心：将文件中的 IP 段直接转化为 ip rule
+    # 使用 awk 生成批量命令，效率极高
+    awk '{ 
+        gsub(/\r/,""); 
+        sub(/#.*/,""); 
+        if (NF > 0 && $1 !~ /^#/) 
+            print "ip rule add to " $1 " table 100 pref 30001" 
+    }' "$IP_FILE" | sh
+
+    # 3. 补上 NAT 伪装（这个必须留着，否则回不来）
+    # nft add chain inet fw4 xyw_nat { type nat hook postrouting priority srcnat \; }
+    # nft flush chain inet fw4 xyw_nat
+    # nft add rule inet fw4 xyw_nat oifname "pppoe-wan" masquerade
+
+    echo "Done. All ECUST IPs are now routed to table 100."
+}
+
+stop() {
+    while ip rule del table "$TABLE_ID" 2>/dev/null; do :; done
+    ip route flush table "$TABLE_ID"
+    # nft delete chain inet fw4 xyw_nat 2>/dev/null
+    echo "Cleared."
+}
